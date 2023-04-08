@@ -12,16 +12,138 @@
 -->
 </head>
 
-<body style="background-color: #e5e5e5">
+<body>
   <header class="header">
-    <a class="header-logo" href="#" target="_blank">
-      <img src="img/logo.png" alt="Логотип">
-    </a>
-    <adress class="header-tel"><a href="tel:+74953225448">+7 495 322-54-48</a></adress>
-    <a class="header-cabinet" href="">Личный кабинет</a>
+    <div class="container">
+      <a class="header__logo" href="#">
+        <img src="img/logo.png" alt="Логотип">
+      </a>
+      <adress class="header__tel"><a href="tel:+74953225448">+7 495 322-54-48</a></adress>
+      <a class="header-cabinet" href="#">
+        <img src="img/arrow.svg" alt="">
+        <span>Личный кабинет</span>
+      </a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#about-us">О нас</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#services">Услуги</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#advantages">Преимущества</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#placement">Размещение</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#blog">Блог</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#contaсts">Контакты</a>
+        </li>
+      </ul>
+      <a class="btn btn__header" href="#">Хочу тур</a>
+      <button class="btn btn__header">Обраный звонок</button>
+    </div>
   </header>
   <main class="main">
+    <div class="container">
+      <h1 class="vissually-hidden">Лагуна. Сеть отелей</h1>
+    </div>
+    <article class="article">
+      <div class="container">
+        <h2 class="article__title">Спецпредложения</h2>
+        <ul class="article__list">
+          <li class="article__item">
+            <img class="article-item__image" src="img/art-01.jpg"
+              alt="Шезлонги у бассейна с великолепным видом на океан">
+            <h3 class="article-item__title">Мальдивские острова</h3>
+            <p class="article-item__desc">от&nbsp;55&nbsp;000&nbsp;₽</p>
+            <a class="article-item__link" href="#">Подробнее</a>
+          </li>
+          <li class="article__item">
+            <img class="article-item__image" src="img/art-02.jpg" alt="Девушка лежит у бассейна с видом на море">
+            <h3 class="article-item__title">Горящий тур на&nbsp;остров Крит</h3>
+            <p class="article-item__desc">от&nbsp;30&nbsp;000&nbsp;₽</p>
+            <a class="article-item__link" href="#">Подробнее</a>
+          </li>
+          <li class="article__item">
+            <img class="article-item__image" src="img/art-03.jpg"
+              alt="Стены комнаты обшиты деревом, посередине стоит диван с тремя подушками, рядом лампа на журнальном столике, на заднем плане окно с видом на город">
+            <h3 class="article-item__title">Номера категории люкс</h3>
+            <p class="article-item__desc">от&nbsp;5&nbsp;000&nbsp;₽</p>
+            <a class="article-item__link" href="#">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <section class="about-us" id="about-us">
+      <div class="container">
+        <h2 class="about-us__title">О нас</h2>
+        <p class="about-us__text">
+          Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации влечёт за&nbsp;собой
+          процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям. Идейные
+          соображения высшего порядка, а&nbsp;также дальнейшее развитие различных форм деятельности представляет собой
+          интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом
+          сложившаяся структура организации требуют определения и&nbsp;уточнения существенных финансовых
+          и&nbsp;административных условий.
+        </p>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="services__title">Услуги</h2>
+        <ul class="services__list">
+          <li class="services__item"></li>
+          <img class="services-item__img" src="img/serv-01.jpg" alt="2 фужера шампанского">
+          <div class="services-item__content">
+            <a class="services-content__link" href="#">Эксклюзивное обслуживание</a>
+            <p class="services-content__desc">Равным образом постоянный количественный рост и&nbsp;сфера нашей
+              активности
+            </p>
+          </div>
+          <li class="services__item">
+            <img class="services-item__img" src="img/serv-02.jpg" alt="Хорошо сервированый стол в банкетном зале">
+            <div class="services-item__content">
+              <a class="services-content__link" href="#">Аренда банкетных залов</a>
+              <p class="services-content__desc">Значимость этих проблем настолько очевидна, что дальнейшее развитие
+                различных форм
+              </p>
+            </div>
+          </li>
+          <li class="services__item">
+            <img class="services-item__img" src="img/serv-03.jpg" alt="Удобный диван стоит перед бассеином в сауне">
+            <div class="services-item__content">
+              <a class="services-content__link" href="#">Сауны, бассейны, бани, фитнес-залы</a>
+              <p class="services-content__desc">Не&nbsp;следует, однако забывать, что начало повседневной работы
+                по&nbsp;формированию позиции
+              </p>
+            </div>
+          </li>
+          <li class="services__item">
+            <img class="services-item__img" src="img/serv-04.jpg"
+              alt="Много раритетных авто стоит на парковке ровно в ряд">
+            <div class="services-item__content">
+              <a class="services-content__link" href="#">Охраняемые автомобильные стоянки</a>
+              <p class="services-content__desc">Не&nbsp;следует, однако забывать, что начало повседневной работы
+                по&nbsp;формированию позиции
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="advantages" id="advantages">
+      <div class="container">
 
+      </div>
+    </section>
+    <section class="placement" id="placement">
+      <div class="container">
+
+      </div>
+    </section>
   </main>
   <footer class="footer">
 
