@@ -57,6 +57,10 @@ body {
 	overflow: hidden;
 }
 
+.title-second {
+  margin: 0;
+  margin-bottom: 30px;
+}
 /* Header */
 
 .header__top {
@@ -112,7 +116,6 @@ body {
 /* special */
 
 .special__title {
-  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -155,3 +158,42 @@ body {
   margin: 0;
   margin-bottom: 47px;
 }
+
+/* about-as */
+
+.about-us__text {
+  width: 888px;
+  margin: 0;
+  text-align: left;
+}
+
+/* services */
+
+.services__list {
+  flex-flow: row wrap;
+  /* min-width: 450px; */
+
+}
+
+.services__item {
+  flex-basis: 573px;
+  outline: 1px solid coral;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+  padding: 26px 45px 35px;
+}
+
+.services__item:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+.services-item__title {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.services-item__desc {
+  margin: 0;
+}
+
