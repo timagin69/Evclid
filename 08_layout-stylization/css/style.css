@@ -16,9 +16,54 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Muller";
+  src: local(MullerRegular),
+    url(../fonts/MullerRegular.woff2) format("woff2"),
+    url(../fonts/MullerRegular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local(MullerLight),
+    url(../fonts/MullerLight.woff2) format("woff2"),
+    url(../fonts/MullerLight.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local(MullerMedium),
+    url(../fonts/MullerMedium.woff2) format("woff2"),
+    url(../fonts/MullerMedium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local(MullerBold),
+    url(../fonts/MullerBold.woff2) format("woff2"),
+    url(../fonts/MullerBold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1200px;
-  font-family: sans-serif;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  background-color: #f1f1f1;
 }
 
 /* global */
@@ -63,15 +108,35 @@ body {
 
 .title-second {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333;
 }
 
 .btn {
   display: inline-block;
   padding: 13px 20px;
-  border: 1px solid coral;
+  border: 1px solid #cc9933;
   border-radius: 10px;
   text-align: center;
+  color: #cc9933;
+
+}
+
+.link {
+  padding-right: 15px;
+  color: #cc9933;
+  background-image: url("../img/link-decor.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 /* Header */
@@ -88,6 +153,11 @@ body {
 
 .header__tel {
   margin-right: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666;
 }
 
 .header__bottom {
@@ -97,19 +167,19 @@ body {
   max-width: 1200px;
 */
   padding: 14px 45px;
-  outline: 1px solid coral;
-  border-radius: 10px;
+  background: #fff;
+  border-radius: 15px;
 }
 
 .navigation {
   margin-right: auto;
 }
 
-/*
-.header__list {
-  flex-wrap: wrap;
+.header__link {
+  color: #666;
 }
 
+/*
 .header__item {
   padding: 14px 0;
 }
@@ -123,15 +193,21 @@ body {
   margin-right: 40px;
 }
 
+.header__cabinet {
+  padding-left: 27px;
+  background-image: url("../img/arrow.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  color: #cc9933;
+}
+
 /* special */
 
-.special__title {
-  margin-bottom: 20px;
-}
-
+/*
 .special__content {
-/*  min-width: 450px;*/
+  min-width: 450px;
 }
+*/
 
 .special__block {
   flex-direction: column;
@@ -149,7 +225,24 @@ body {
 .special__card {
   flex: 1;
   padding: 40px 45px;
-  outline: 1px solid coral;
+  overflow: hidden;
+  border-radius: 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f1f1f1;
+}
+
+.special-card__first {
+  background-image: url("../img/art-01.jpg");
+}
+
+.special-card__second {
+  background-image: url("../img/art-02.jpg");
+}
+
+.special-card__third {
+  background-image: url("../img/art-03.jpg");
 }
 
 .special-card__right {
@@ -157,14 +250,41 @@ body {
   justify-content: flex-end;
 }
 
+.special-card__right a {  /*Всё равно стрелочка справа*/
+  display: inline;
+}
+
 .special-card__title {
+  max-width: 420px;
   margin: 0;
   margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
 }
 
 .special-card__desc {
   margin: 0;
   margin-bottom: 47px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.special-card__link {
+  color: #f0bf5f;
+}
+
+.special-card__header {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.special-card__descr {
+  font-size: 30px;
+  line-height: 30px;
 }
 
 /* about-as */
@@ -173,7 +293,8 @@ body {
   max-width: 888px;
   margin: 0;
   text-align: left;
-}
+  line-height: 200%;
+  }
 
 /* services */
 
