@@ -123,7 +123,9 @@ body {
   border-radius: 10px;
   text-align: center;
   color: #cc9933;
-
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .link {
@@ -328,6 +330,7 @@ body {
 
 .services-item__desc {
   margin: 0;
+  max-width: 402px;
   line-height: 200%;
 }
 
@@ -429,10 +432,17 @@ body {
   margin-bottom: 16px;
 }
 
-.placement-content__title,
-.placement-content__desc {
+.placement-content__title {
   margin: 0;
   margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.placement-content__desc {
+  margin: 0;
+  margin-bottom: 20px;
   line-height: 16px;
 }
 
@@ -454,16 +464,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-}
-
-.placement-content__title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-.placement-content__desc {
-  margin-bottom: 33px;
 }
 
 .placement-item__last {
