@@ -208,6 +208,7 @@ body {
 }
 
 .special__card {
+  flex-grow: 1;
   padding: 40px 45px;
   overflow: hidden;
   border-radius: 15px;
@@ -229,16 +230,10 @@ body {
   background-image: url("../img/art-03.jpg");
 }
 
-.special-card__left {
-  flex-grow: 1;
-}
-
 .special-card__right {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  flex-grow: 1;
-/*  height: 100%;*/
 }
 
 .special-card__title {
