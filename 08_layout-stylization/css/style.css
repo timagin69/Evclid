@@ -85,7 +85,7 @@ body {
   display: flex;
 }
 
-.marg:not(:last-child) {
+.marg {
   margin-bottom: 70px;
 }
 
@@ -229,11 +229,16 @@ body {
   background-image: url("../img/art-03.jpg");
 }
 
+.special-card__left {
+  flex-grow: 1;
+}
+
 .special-card__right {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  height: 100%;
+  flex-grow: 1;
+/*  height: 100%;*/
 }
 
 .special-card__title {
@@ -279,6 +284,10 @@ body {
   }
 
 /* services */
+
+.services {
+  margin-bottom: 46px;
+}
 
 .services__list {
   flex-flow: row wrap;
@@ -328,6 +337,10 @@ body {
 }
 
 /* adventages */
+
+.advantages {
+  margin-bottom: 48px;
+}
 
 .adventages__list {
   flex-flow: row wrap;
@@ -466,6 +479,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
+}
+
+.placement-content__link {
+  line-height: 16px;
 }
 
 .placement-item__more {
