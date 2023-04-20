@@ -154,6 +154,10 @@ body {
   margin-right: 40px;
 }
 
+.header__img {
+  display: block;
+}
+
 .header__tel {
   margin-right: auto;
   font-style: normal;
