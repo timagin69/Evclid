@@ -364,35 +364,37 @@
       <div class="container">
         <div class="toor__container">
           <h2 class="title-second toor__title">Хочу тур</h2>
-          <form class="form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <label class="form__label flex">
-              <span class="lable__title">Город вылета</span>
-              <select class="form__input" name="city">
-                <option value="piter">Санкт-Петербург</option>
-                <option value="moscow">Москва</option>
-              </select>
-            </label>
-            <label class="form__label flex">
-              <span class="lable__title">Страна</span>
-              <select class="form__input" name="country">
-                <option value="australia">Австралия</option>
-                <option value="spain">Испания</option>
-              </select>
-            </label>
-            <label class="form__label flex label-form">
-              <span class="lable__title">Дата прибытия</span>
-              <input class="form__input" type="date" name="date" value="2021-10-18">
-            </label>
-            <label class="form__label flex label-form">
-              <span class="lable__title">Ночей</span>
-              <input class="form__input input-nights" type="number" name="nights" value="6" min="1">
-            </label>
-            <label class="form__label flex label-form">
-              <span class="lable__title">Туристы</span>
-              <input class="form__input input-turists" type="number" name="turists" value="2" min="1" required>
-            </label>
-            <button class="btn-reset btn toor__btn" type="submit">Найти</button>
-          </form>
+          <div class="toor__form">
+            <form class="form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+              <label class="form__label flex">
+                <span class="lable__title title-select">Город вылета</span>
+                <select class="form__input" name="city">
+                  <option value="piter">Санкт-Петербург</option>
+                  <option value="moscow">Москва</option>
+                </select>
+              </label>
+              <label class="form__label flex">
+                <span class="lable__title title-select">Страна</span>
+                <select class="form__input" name="country">
+                  <option value="australia">Австралия</option>
+                  <option value="spain">Испания</option>
+                </select>
+              </label>
+              <label class="form__label flex label-form">
+                <span class="lable__title title-date">Дата прибытия</span>
+                <input class="form__input" type="date" name="date" value="2021-10-18">
+              </label>
+              <label class="form__label flex label-form">
+                <span class="lable__title">Ночей</span>
+                <input class="form__input input-nights" type="number" name="nights" value="6" min="1">
+              </label>
+              <label class="form__label flex label-form">
+                <span class="lable__title">Туристы</span>
+                <input class="form__input input-turists" type="number" name="turists" value="2" min="1" required>
+              </label>
+              <button class="btn-reset btn toor__btn" type="submit">Найти</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -410,19 +412,19 @@
               </li>
               <li class="contacts__item flex">
                 <h3 class="contacts__header">Телефоны</h3>
-                <p class="contacts__desc flex">
+                <div class="contacts__desc flex">
                   <a class="contacts-tel__link" href="tel:+74995356434">+7 499 535-64-34</a>
                   <a class="contacts-tel__link" href="tel:+74950050544">+7 495 005-05-44</a>
-                </p>
+                </div>
               </li>
               <li class="contacts__item flex">
                 <h3 class="contacts__header">Email</h3>
-                <p class="contacts__desc flex">
+                <div class="contacts__desc">
                   <a class="contacts-email__link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
-                  <span class="contacts-email__desc">по вопросам бронирования</span>
+                  <p class="contacts-email__desc">по вопросам бронирования</p>
                   <a class="contacts-email__link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
-                  <span class="contacts-email__desc">по вопросам сотрудничества</span>
-                </p>
+                  <p class="contacts-email__desc">по вопросам сотрудничества</p>
+                </div>
               </li>
               <li class="contacts__item flex">
                 <h3 class="contacts__header">График</h3>
@@ -450,32 +452,30 @@
           </p>
           <a class="left__link" href="#">Пользовательское соглашение</a>
         </div>
-        <adress class="footer__center">
+        <address class="footer__center">
           <p class="center__text">
             11710, улица Юности, дом&nbsp;5 строение&nbsp;4, офис&nbsp;2
           </p>
-          <p class="center__text center__tel flex">
+          <div class="center__tel flex">
             <a class="center-tel__link" href="tel:+74995356434">+7 499 535-64-34</a>
             <a class="center-tel__link" href="tel:+74950050544">+7 495 005-05-44</a>
-          </p>
-          <p class="center__text center__email flex">
+          </div>
+          <div class="center__email flex">
             <a class="center-email__link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
             <a class="center-email__link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
-          </p>
-        </adress>
-        <div class="footer__right">
-          <ul class="list-reset social">
-            <li class="social-item">
-              <a class="social-link social-link-owl" href="#"></a>
-            </li>
-            <li class="social-item">
-              <a class="social-link social-link-ok" href="#"></a>
-            </li>
-            <li class="social-item">
-              <a class="social-link social-link-vk" href="#"></a>
-            </li>
-          </ul>
-        </div>
+          </div>
+        </address>
+        <ul class="list-reset social">
+          <li class="social-item">
+            <a class="social-link social-link-owl" href="#"></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-link-ok" href="#"></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-link-vk" href="#"></a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
