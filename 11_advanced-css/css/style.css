@@ -158,7 +158,7 @@ body {
 }
 
 .card {
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 15px;
   background-color: #fff;
 }
@@ -321,12 +321,13 @@ body {
 }
 
 .special__card {
+  position: relative;
   flex-grow: 1;
   flex-direction: column;    /* 3 свойства ниже, чтобы текст оставался всегда прижатым к низу*/
   justify-content: flex-end;
   align-items: flex-start;
   padding: 40px 45px;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 15px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -372,7 +373,38 @@ body {
 }
 
 .special-card__link {
+  outline: none;
   color: #f0bf5f;
+  transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.special-card__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  outline-offset: 8px;
+  outline: 1px solid transparent;
+  transition: outline-color 0.3s ease-in-out;
+}
+
+.special-card__link:focus::after {
+  outline-color: #f0bf5f;
+}
+
+.special-card__link:hover {
+  padding-right: 26px;
+}
+
+.special-card__link:active {
+  padding-right: 15px;
+  color: #fff;
+}
+
+.special-card__link:active::after {
+  outline: none;
 }
 
 .special-card__header {
@@ -406,6 +438,7 @@ body {
 }
 
 .services__item {
+  position: relative;
   margin-bottom: 24px;
   margin-right: 24px;
   padding: 191px 45px 35px;
@@ -446,6 +479,67 @@ body {
   margin: 0;
   max-width: 402px;
   line-height: 200%;
+}
+
+.services-item__link {
+  align-items: center;
+  outline: none;
+  color: #c93;
+  transition: color 0.3s ease-in-out;
+}
+
+.services-item__link svg {
+  stroke: #c93;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.services-item__link span {
+  margin-right: 5px;
+  transition: margin-right 0.3s ease-in-out;
+}
+
+.services-item__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  outline-offset: 8px;
+  outline: 1px solid transparent;
+  transition: outline-color 0.3s ease-in-out;
+}
+
+.services-item__link:focus::after {
+  outline-color: #c93;
+}
+
+.services-item__link:hover {
+  color: #f0bf5f;
+}
+
+.services-item__link:hover svg {
+  stroke: #f0bf5f;
+}
+
+.services-item__link:hover span {
+  margin-right: 16px;
+}
+
+.services-item__link:active {
+  color: #a47312;;
+}
+
+.services-item__link:active svg {
+  stroke: #c93;
+}
+
+.services-item__link:active span {
+  margin-right: 5px;
+}
+
+.services-item__link:active::after {
+  outline: none;
 }
 
 /* adventages */
@@ -587,6 +681,7 @@ body {
 }
 
 .placement-item__last {
+  position: relative;
   align-items: flex-end;
   padding: 27px 54px;
   background-image: url("../img/place-09.jpg");
@@ -606,6 +701,15 @@ body {
   line-height: 200%;
   color: #fff;
   background-image: url("../img/link-decor-white.svg");
+}
+
+.placement-item__more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* toor */
@@ -859,6 +963,10 @@ opacity: 1;
 
 .center-email__link {
   margin-right: auto;
+}
+
+.social__link {
+  outline: none;
 }
 
 .social__link svg {
