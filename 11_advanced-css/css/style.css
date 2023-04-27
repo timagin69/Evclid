@@ -330,10 +330,6 @@ body {
   background-image: url("../img/art-03.jpg");
 }
 
-.grad-first {
-  overflow: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
-}
-
 /* .special-card__right {
   flex-direction: column;
   justify-content: flex-end;
