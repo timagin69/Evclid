@@ -198,12 +198,13 @@ img {
 
 .nav__link {
   position: relative;
-  outline: none;
+  outline-offset: 5px;
+  outline: 2px solid transparent;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: var(--dark-color);
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, outline-color 0.3s ease-in-out;
 }
 
 .nav__link::after {
@@ -218,12 +219,11 @@ img {
 }
 
 .nav__link:focus {
-  outline-offset: 5px;
-  outline: 2px solid var(--orange-color);
+  outline-color: var(--orange-color);
 }
 
 .nav__link:hover {
-  outline: none;
+  outline-color: transparent;
 }
 
 .nav__link:hover::after {
@@ -242,7 +242,6 @@ img {
   position: relative;
   outline: none;
 }
-
 
 .header__search::after {
   content: "";
