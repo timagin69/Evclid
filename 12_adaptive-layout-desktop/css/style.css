@@ -212,7 +212,7 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 0;
+  bottom: -7px;
   right: 0;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease-in-out;
@@ -220,10 +220,6 @@ img {
 
 .nav__link:focus {
   outline-color: var(--orange-color);
-}
-
-.nav__link:hover {
-  outline-color: transparent;
 }
 
 .nav__link:hover::after {
@@ -327,7 +323,7 @@ img {
 /* About-us */
 
 .about-us {
-  margin-bottom: 48px;
+  margin-bottom: 100px;
 }
 
 .about-us__heading {
@@ -344,22 +340,16 @@ img {
   color: var(--dark-color);
 }
 
-/* products */
-
-.products {
-  margin-bottom: 100px;
-}
-
-.products__content {
+.about-us__content {
   display: flex;
   gap: 32px;
 }
 
-.products__block {
+.about-us__block {
   display: flex;
   flex-flow: column wrap;
   gap: 32px;
-  width: calc((100% - 24px) / 2);
+  width: calc((100% - 32px) / 2);
 }
 
 .card {
@@ -481,10 +471,9 @@ img {
 }
 
 .stages__box {
-  padding-top: 8px;
   border-radius: 32px;
   background-image: url("../img/stages-01.jpg");
-  background-position: 0 8px;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -616,6 +605,7 @@ img {
 }
 
 .faq-btn__text {
+  padding-right: 15px;
   transition: color 0.3s ease-in-out;
 }
 
@@ -682,7 +672,10 @@ img {
 }
 
 .left-box {
+  display: flex;
+  flex-flow: column wrap;
   flex-basis: 363px;
+  max-width: 363px;
 }
 
 .footer__logo {
@@ -717,8 +710,9 @@ img {
   color: var(--active-color);
 }
 
-.social__list {
+.social {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -789,9 +783,27 @@ img {
 }
 
 .form__input_textarea {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   flex-basis: 150px;
   resize: none;
+}
+
+::-webkit-input-placeholder {
+  color: var(--grey-color)
+}
+
+::-moz-placeholder {
+  color: var(--grey-color)
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: var(--grey-color)
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: var(--grey-color)
 }
 
 .form__btn {
