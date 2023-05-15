@@ -110,9 +110,9 @@ img {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 50px;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1870px;
 }
 
 .btn {
@@ -174,10 +174,14 @@ img {
   justify-content: space-between;
 }
 
+.burger {
+  display: none;
+}
+
 .header__logo {
   /* margin-right: auto; */
   flex-shrink: 0;
-  padding-right: 10px;
+  padding-right: 50px;
 }
 
 .header__wrapper {
@@ -280,7 +284,7 @@ img {
 /* main */
 
 .main {
-  margin-bottom: 98px;
+  margin-bottom: 101px;
 }
 
 /* disc */
@@ -356,12 +360,13 @@ img {
   display: flex;
   flex-flow: column wrap;
   gap: 32px;
-  width: calc((100% - 32px) / 2);
+  width: 100%;
 }
 
 .card {
   flex-grow: 1;
-  padding: 65px 115px 65px 300px;
+  padding: 65px;
+  padding-left: 300px;
   border: 1px solid var(--grey-color);
   border-radius: 32px;
   background-position: left 59px center;
@@ -373,7 +378,7 @@ img {
   display: flex;
   align-items: flex-end;
   padding: 0;
-  background-position: 0 0;
+  background-position: center;
   background-size: cover;
   background-image: url("../img/card-01.jpg");
 }
@@ -396,7 +401,8 @@ img {
 }
 
 .card__btn {
-  height: 60px;
+  border: 3px solid var(--orange-color);
+  min-height: 60px;
   background-color: transparent;
 }
 
@@ -407,7 +413,6 @@ img {
 
 .card__desc {
   margin: 0;
-  padding-right: 15px;
   max-width: 450px;
   font-weight: 400;
   font-size: 16px;
@@ -417,6 +422,7 @@ img {
 
 .card__desc_01 {
   margin-right: auto;
+  padding-right: 45px;
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
@@ -486,7 +492,7 @@ img {
   overflow: hidden;
   height: 100%;
   background-image: url("../img/stages-01.jpg");
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -614,7 +620,7 @@ img {
 }
 
 .faq-btn__text {
-  padding-right: 15px;
+  padding-right: 100px;
   transition: color 0.3s ease-in-out;
 }
 
@@ -688,7 +694,7 @@ img {
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .footer__list {
@@ -754,8 +760,8 @@ img {
 
 .center-box {
   align-self: center;
-  padding: 0 15px;
-  width: 600px;
+  padding: 0 30px;
+  width: 630px;
 }
 
 .footer__heading {
@@ -793,7 +799,7 @@ img {
 }
 
 .form__input_textarea {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   flex-basis: 150px;
   resize: none;
 }
@@ -818,7 +824,7 @@ img {
 
 .form__btn {
   align-self: center;
-  width: 269px;
+  padding: 19px 52px;
 }
 
 .footer__text {
