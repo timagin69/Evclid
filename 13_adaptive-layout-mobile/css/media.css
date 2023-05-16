@@ -7,13 +7,13 @@
   }
 
   .card_01 {
-    min-height: 642px;
+    min-height: 641px;
   }
 }
 
 @media (max-width: 1200px) {
   .main {
-    margin-bottom: 82px;
+    margin-bottom: 79px;
   }
 
   /* header */
@@ -169,7 +169,7 @@
 
 @media (max-width: 992px) {
   .main {
-    margin-bottom: 111px;
+    margin-bottom: 110px;
   }
 
   /* header */
@@ -240,7 +240,7 @@
   }
 
   .wrap__cont_over {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     height: 293px;
   }
 
@@ -307,16 +307,34 @@
 }
 
 @media (max-width: 767px) {
+  .card__over {
+    flex-direction: column;
+  }
+
+  .card__desc_01 {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
   .stages__list {
     justify-content: space-between;
     gap: 0;
+  }
+
+  .center-box {
+    width: 100%;
+  }
+
+  .form {
+    width: 81%;
   }
 }
 
 @media (max-width: 576px) {
 
   .main {
-    margin-bottom: 61px;
+    margin-bottom: 59px;
   }
 
   .container {
@@ -526,7 +544,7 @@
   }
 
   .stages__btn:not(:last-child) {
-    margin-right: 3px;
+    margin-right: 2px;
   }
 
   /* faq */
@@ -555,9 +573,11 @@
   }
 
   .center-box {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 17px;
-    width: 290px;
+    width: 100%;
   }
 
   .footer__heading {
@@ -567,6 +587,8 @@
   .form {
     padding-bottom: 14px;
     border-bottom: 1px solid var(--form-color);
+    width: 100%;
+    max-width: 410px;
   }
 
   .form__input {

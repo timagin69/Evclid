@@ -83,6 +83,7 @@ img {
   --hover-color: #ffb84d;
   --active-color: #e1670e;
   --social-color: #666;
+  --form-color: #414141;
 }
 
 .list-reset {
@@ -284,7 +285,7 @@ img {
 /* main */
 
 .main {
-  margin-bottom: 101px;
+  margin-bottom: 100px;
 }
 
 /* disc */
@@ -403,6 +404,7 @@ img {
 .card__btn {
   border: 3px solid var(--orange-color);
   min-height: 60px;
+  max-width: 178px;
   background-color: transparent;
 }
 
@@ -423,6 +425,7 @@ img {
 .card__desc_01 {
   margin-right: auto;
   padding-right: 45px;
+  max-width: 70%;
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
@@ -676,7 +679,7 @@ img {
 /* footer */
 
 .footer {
-  padding: 50px 0;
+  padding: 47px 0;
   background-color: var(--dark-color);
 }
 
@@ -770,10 +773,9 @@ img {
 }
 
 .form {
-  --form-color: #414141;
   display: flex;
   flex-direction: column;
-}
+  }
 
 .form__input {
   padding: 14px 24px;
