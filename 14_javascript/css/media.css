@@ -375,6 +375,16 @@
     text-align: center;
   }
 
+  .swiper-pagination {
+    gap: 20px;
+    padding-bottom: 8px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
   .disc__heading {
     margin-bottom: 9px;
     font-size: 20px;

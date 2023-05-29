@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Евклид. Проектные системы.</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -53,13 +54,26 @@
     <section class="disc">
       <div class="container">
         <div class="disc__container">
-          <h1 class="disc__heading">
-            Проектные решения любой сложности
-          </h1>
-          <p class="disc__text">
-            Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
-          </p>
-          <button class="disc__btn btn btn-reset">Заказать расчёт</button>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--1">
+              </div>
+              <div class="swiper-slide swiper-slide--2">
+              </div>
+              <div class="swiper-slide swiper-slide--3">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="disc__content">
+            <h1 class="disc__heading">
+              Проектные решения любой сложности
+            </h1>
+            <p class="disc__text">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
+            </p>
+            <button class="disc__btn btn btn-reset">Заказать расчёт</button>
+          </div>
         </div>
       </div>
     </section>
@@ -270,6 +284,7 @@
       </p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
