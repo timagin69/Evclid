@@ -828,7 +828,7 @@ img {
 .form {
   display: flex;
   flex-direction: column;
-  }
+}
 
 .form__input {
   padding: 14px 24px;
@@ -836,6 +836,7 @@ img {
   border: none;
   border-radius: 16px;
   min-width: 410px;
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
