@@ -292,8 +292,12 @@
     margin-bottom: 24px;
   }
 
+  .form__label {
+    margin-bottom: 25px;
+  }
+
   .form__input_textarea {
-    margin-bottom: 32px;
+    padding-bottom: 8px;
   }
 
   .left-box {
@@ -586,7 +590,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
     width: 100%;
   }
 
@@ -608,8 +612,12 @@
     font-size: 14px;
   }
 
+  .form__label:last-of-type {
+    margin-bottom: 19px;
+  }
+
   .form__input_textarea {
-    margin-bottom: 25px;
+    padding-bottom: 8px;
   }
 
   .form__btn {

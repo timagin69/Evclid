@@ -15,7 +15,7 @@ a {
 img {
   max-width: 100%;
   height: 100%;
-  object-fit: cover;
+/*  object-fit: cover;*/
 }
 
 @font-face {
@@ -830,9 +830,12 @@ img {
   flex-direction: column;
 }
 
+.form__label {
+  margin-bottom: 25px;
+}
+
 .form__input {
   padding: 14px 24px;
-  margin-bottom: 25px;
   border: none;
   border-radius: 16px;
   min-width: 410px;
@@ -854,9 +857,13 @@ img {
   background-color: var(--social-color);
 }
 
+.form__label_area {
+  margin-bottom: 22px;
+}
+
 .form__input_textarea {
-  margin-bottom: 30px;
   flex-basis: 150px;
+  padding-bottom: 12px;
   resize: none;
 }
 
