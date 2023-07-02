@@ -1,0 +1,361 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+	src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+  font-display: swap;
+}
+
+.page {
+  min-width: 320px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #f1f1f1;
+}
+
+/* global */
+
+:root {
+  --blue-color: #3f2aff;
+  --white-color: #fff;
+  --text-color: #666;
+  --grey-color: #efd0f9;
+  /* --hover-color: #ffb84d;
+  --active-color: #e1670e; */
+  --black-color: #212133;
+  --dark-color: #2e2b44;
+  --desc-color: #85859b;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1110px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 59px;
+  outline: none;
+  border: 1px solid var(--blue-color);
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:focus {
+  background-color: var(--hover-color);
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+.btn:active {
+  background-color: var(--active-color);
+}
+
+.second-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.third-title {
+  margin: 0;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+/* header */
+
+.header {
+  padding: 30px 0;
+  background-color: var(--blue-color);
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  gap: 56px;
+}
+
+.nav__link {
+  color: var(--white-color);
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* hero */
+
+.hero {
+  padding: 210px 0 130px;
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+  /* background-image: url("../img/hero.svg"); */
+  background-repeat: no-repeat;
+}
+
+.hero__wrapper {
+  max-width: 444px;
+}
+
+.hero__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  color: var(--white-color);
+  font-size: 60px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.hero__desc {
+  margin: 0;
+  margin-bottom: 70px;
+  color: var(--white-color);
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.hero__btn {
+  padding: 25px 75px;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* advantages */
+
+.advantages {
+  padding: 80px 0;
+}
+
+.advantages__wrap {
+  margin-bottom: 30px;
+  padding-left: 190px;
+  max-width: 770px;
+  background-image: url("../img/advantages-01.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+  /* background-size: cover; */
+}
+
+.advantages__title {
+  color: var(--dark-color);
+}
+
+.advantages__text {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* .advantages__list {
+  display: flex;
+  gap: 30px;
+} */
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.bg-01 {
+  background-image: url("../img/advantages-02.svg");
+}
+
+.bg-02 {
+  background-image: url("../img/advantages-03.svg");
+}
+
+.bg-03 {
+  background-image: url("../img/advantages-04.svg");
+}
+
+.advantages__desc {
+  margin: 0;
+  padding-left: 109px;
+  color: var(--text-color);
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+/* teachers */
+
+.teachers {
+  padding: 80px 0;
+  background-color: var(--black-color);
+}
+
+.teachers__heding {
+  color: var(--white-color);
+}
+
+.teachers__wrap {
+  font-size: 0;
+}
+
+.teachers__title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: var(--white-color);
+}
+
+.teachers__desc {
+  margin: 0;
+  color: var(--desc-color);
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.teachers__img {
+  margin-bottom: 30px;
+  min-height: 180px;
+}
+
+/* courses */
+
+.courses__list {
+  display: flex;
+}
+
+.courses__item {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 1px solid red;
+  align-items: flex-start;
+}
+
+/* about-us */
+
+.about-us {
+  padding: 28px 0;
+  background-color: var(--dark-color);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social__item {
+  font-size: 0;
+}
+
+.social__link {
+  display: inline-block;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__date {
+  margin: 0;
+}
+
+.footer__token {
+  color: var(--blue-color);
+}
