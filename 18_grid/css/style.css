@@ -32,10 +32,10 @@ img {
 
 @font-face {
   font-family: "Roboto";
-	src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
     url("../fonts/Roboto-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
+  font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -44,6 +44,7 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   background-color: #f1f1f1;
+  letter-spacing: 1px;
 }
 
 /* global */
@@ -85,9 +86,11 @@ img {
   overflow: hidden;
 }
 
+/*
 .container {
   max-width: 1110px;
 }
+*/
 
 .btn {
   display: inline-block;
@@ -140,7 +143,8 @@ img {
 /* header */
 
 .header {
-  padding: 30px 0;
+  padding-top: 27px;
+  padding-bottom: 28px;
   background-color: var(--blue-color);
 }
 
@@ -167,7 +171,7 @@ img {
 /* hero */
 
 .hero {
-  padding: 210px 0 130px;
+  padding: 130px 0;
   background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
   /* background-image: url("../img/hero.svg"); */
   background-repeat: no-repeat;
@@ -190,7 +194,7 @@ img {
 
 .hero__desc {
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   color: var(--white-color);
   font-size: 18px;
   font-family: Roboto;
@@ -200,7 +204,7 @@ img {
 }
 
 .hero__btn {
-  padding: 25px 75px;
+  padding: 23px 71px;
   font-size: 18px;
   font-family: Roboto;
   font-style: normal;
@@ -211,11 +215,12 @@ img {
 /* advantages */
 
 .advantages {
-  padding: 80px 0;
+  padding-top: 78px;
+  padding-bottom: 80px;
 }
 
 .advantages__wrap {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   padding-left: 190px;
   max-width: 770px;
   background-image: url("../img/advantages-01.png");
@@ -224,7 +229,13 @@ img {
   /* background-size: cover; */
 }
 
+.advantages__list {
+  margin-right: -30px;
+}
+
 .advantages__title {
+  margin-bottom: 18px;
+  max-width: 400px;
   color: var(--dark-color);
 }
 
@@ -265,7 +276,7 @@ img {
 
 .advantages__desc {
   margin: 0;
-  padding-left: 109px;
+  padding-left: 95px;
   color: var(--text-color);
   font-size: 16px;
   font-family: Roboto;
@@ -277,20 +288,29 @@ img {
 /* teachers */
 
 .teachers {
-  padding: 80px 0;
+  padding-top: 72px;
+  padding-bottom: 63px;
   background-color: var(--black-color);
 }
 
 .teachers__heding {
+  margin-bottom: 26px;
   color: var(--white-color);
 }
 
 .teachers__wrap {
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
   font-size: 0;
 }
 
+.teachers__list {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .teachers__title {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   font-size: 18px;
   color: var(--white-color);
 }
